@@ -1,0 +1,85 @@
+/// Including Variables
+@import '../partials/importer';
+
+#block-views-views-blogs-block {
+  padding-bottom: 20px;
+
+  h2 {
+    font-size: $font-size-28;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    color: $dark-grey;
+    padding: 30px 0;
+  }
+
+  .views-row {
+    padding: 0px 15px;
+  }
+
+  .views-field-title {
+    color: $base-color;
+    font-size: $font-size-16;
+    font-weight: 600;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $event-background-color;
+  }
+
+  .views-field-body {
+    color: $blog-description;
+    padding: 20px 0;
+    border-bottom: 1px solid $event-background-color;
+    font-weight: 600;
+  }
+
+  .views-field-field-ct-published-date {
+    @extend .views-field-body;
+    border-bottom: none;
+  }
+
+  .slick-prev {
+    top: 32%;
+
+    &:before {
+      content: "\f053";
+      color: $base-color;
+      font-family: 'FontAwesome';
+      font-size: 30px;
+    }
+  }
+
+  .slick-next {
+    top: 32%;
+
+    &:before {
+      content: "\f054";
+      color: $base-color;
+      font-family: 'FontAwesome';
+      font-size: 30px;
+    }
+  }
+
+  .slick-dots {
+    bottom: -40px;
+
+    li {
+      width: 20px;
+      margin: 0;
+
+      button {
+        &:before {
+          font-size: $font-size-12;
+          color: $slick-dots;
+        }
+      }
+
+      &.slick-active {
+        button {
+          &:before {
+            color: $base-color;
+          }
+        }
+      }
+    }
+  }
+}

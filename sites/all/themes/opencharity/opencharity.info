@@ -1,0 +1,23 @@
+name = OpenCharity Theme
+description = Theme for charity.
+core = 7.x
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[header]             = 'Top Bar'
+regions[highlighted]        = 'Highlighted'
+regions[help]               = 'Help'
+regions[content]            = 'Content'
+regions[footer]             = 'Footer'
+regions[page_top]           = 'Page top'
+regions[page_bottom]        = 'Page bottom'
+
+;;;;;;;;;;;;;;;;;;;;;
+;; stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;
+;; JavaScripts
+;;;;;;;;;;;;;;;;;;;;;

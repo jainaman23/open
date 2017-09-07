@@ -1,0 +1,12 @@
+/// Layout
+
+/// Including Variables
+@import '../partials/importer';
+
+.region-content {
+  & > .block {
+    & > h2, & > .content {
+      @include box;
+    }
+  }
+}

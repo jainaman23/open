@@ -1,0 +1,100 @@
+<?php
+/**
+ * @file
+ * Module file for all department theme configurations.
+ */
+
+/**
+ * Implements hook_block_view_alter(&$data, $block).
+ */
+function site_customizations_block_view_alter(&$data, $block) {
+ $bid = $block->delta;
+ $theme = drupal_get_path('theme', 'opencharity');
+  // dpm($bid);
+  switch($bid) {
+    case 'top-banner':
+      $data['content']['#attached']['css'][] = array(
+        'data' => $theme . '/css/state/top_banner.css',
+        'type' => 'file',
+      );
+      $data['content']['#attached']['js'][] = array(
+        'data' => $theme . '/js/top_banner.js',
+        'type' => 'file',
+      );
+    break;
+
+    case 'views_events-block':
+      $data['content']['#attached']['css'][] = array(
+        'data' => $theme . '/css/state/event.css',
+        'type' => 'file',
+      );
+    break;
+
+    case 'views_get_involved-block':
+      $data['content']['#attached']['css'][] = array(
+        'data' => $theme . '/css/module/get_involved.css',
+        'type' => 'file',
+      );
+    break;
+
+    case 'views_our_mission-block':
+      $data['content']['#attached']['css'][] = array(
+        'data' => $theme . '/css/module/our_mission.css',
+        'type' => 'file',
+      );
+    break;
+
+    case 'our-members':
+      $data['content']['#attached']['css'][] = array(
+        'data' => $theme . '/css/slick-theme.css',
+        'type' => 'file',
+      );
+      $data['content']['#attached']['css'][] = array(
+        'data' => $theme . '/css/slick.css',
+        'type' => 'file',
+      );
+      $data['content']['#attached']['css'][] = array(
+        'data' => $theme . '/css/state/our_member.css',
+        'type' => 'file',
+      );
+      $data['content']['#attached']['js'][] = array(
+        'data' => $theme . '/js/slick.min.js',
+        'type' => 'file',
+      );
+      $data['content']['#attached']['js'][] = array(
+        'data' => $theme . '/js/custom_member_slick.js',
+        'type' => 'file',
+      );
+    break;
+
+    case 'views_blogs-block':
+      $data['content']['#attached']['css'][] = array(
+        'data' => $theme . '/css/slick-theme.css',
+        'type' => 'file',
+      );
+      $data['content']['#attached']['css'][] = array(
+        'data' => $theme . '/css/slick.css',
+        'type' => 'file',
+      );
+      $data['content']['#attached']['css'][] = array(
+        'data' => $theme . '/css/state/blogs.css',
+        'type' => 'file',
+      );
+      $data['content']['#attached']['js'][] = array(
+        'data' => $theme . '/js/slick.min.js',
+        'type' => 'file',
+      );
+      $data['content']['#attached']['js'][] = array(
+        'data' => $theme . '/js/custom_blogs_slick.js',
+        'type' => 'file',
+      );
+    break;
+
+    case 'social-media-links':
+      $data['content']['#attached']['css'][] = array(
+        'data' => $theme . '/css/font-awesome.css',
+        'type' => 'file',
+      );
+    break;
+  }
+}

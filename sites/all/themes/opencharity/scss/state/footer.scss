@@ -1,0 +1,79 @@
+/// Including Variables
+@import '../partials/importer';
+
+footer {
+  background-color: $footer-background;
+  color: $footer-body;
+  text-align: center;
+  font-weight: 600;
+
+  p {
+    font-size: $font-size-14;
+    padding: 24px 0;
+    margin: 0;
+
+    span {
+      color: $base-color;
+    }
+  }
+
+  .box {
+    @include box;
+
+    #block-social-media-links-social-media-links {
+      border-bottom: 1px solid $footer-bar;
+      padding: 31px 0;
+
+      .social-media-links {
+        li {
+          padding: 0 12px;
+
+          a{
+            position: relative;
+            color: $base-color;
+
+            &:after {
+              font-family: 'FontAwesome';
+              width: 20px;
+              height: 20px;
+              font-size: $font-size-20;
+              font-weight: 400;
+            }
+
+            &:hover, &:focus {
+              text-decoration: none;
+            }
+
+            img {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .facebook {
+        a {
+          &:after {
+            content: '\f09a';
+          }
+        }
+      }
+
+      .twitter {
+        a {
+          &:after {
+            content: "\f099";
+          }
+        }
+      }
+
+      .googleplus {
+        a {
+          &:after {
+            content: "\f0d5";
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+name = OpenCharity Theme Configurations
+description = Used for theme configurations of site.
+core = 7.x
+package = Configurations

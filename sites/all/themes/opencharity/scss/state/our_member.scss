@@ -1,0 +1,43 @@
+/// Including Variables
+@import '../partials/importer';
+
+#block-bean-our-members {
+  background-color: $mission-background;
+  padding: 20px 0 40px;
+  h2 {
+    font-size: $font-size-28;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    color: $dark-grey;
+    padding: 25px 0 30px;
+  }
+
+  .slick-dots {
+    bottom: -40px;
+
+    li {
+      width: 20px;
+      margin: 0;
+
+      button {
+        &:before {
+          font-size: $font-size-12;
+          color: $slick-dots;
+        }
+      }
+
+      &.slick-active {
+        button {
+          &:before {
+            color: $base-color;
+          }
+        }
+      }
+    }
+  }
+
+  img {
+    margin: auto;
+  }
+}

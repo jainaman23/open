@@ -1,0 +1,61 @@
+/// Including Variables
+@import '../partials/importer';
+
+#block-views-views-get-involved-block {
+  padding-bottom: 20px;
+
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $font-size-28;
+    color: $dark-grey;
+    padding: 30px 0 15px;
+    font-weight: 600;
+  }
+
+  // Geting block mixin.
+  @include get_involved($dark-grey, $event-address, $base-color);
+
+  .view-views-get-involved {
+    .view-content {
+      width: 100%;
+
+      @media all and (min-width: $xs + 1) {
+        width: 80%;
+        margin: auto;
+      }
+
+      @media all and (min-width: $sm + 1) {
+        width: 100%;
+        @include display-flex;
+      }
+
+      @media all and (max-width: $sm) {
+        padding: 0 20px;
+      }
+    }
+
+    .views-row {
+      @media all and (min-width: $sm + 1) and (max-width: $md) {
+        padding: 0 20px;
+      }
+
+      @media all and (max-width: $sm) {
+        width: 100%;
+        margin: 15px auto;
+      }
+
+      .views-field-field-ct-register-link {
+        a {
+          @media all and (min-width: $sm + 1) and (max-width: $md) {
+            padding: 10px 20px;
+          }
+
+          @media all and (max-width: $xs) {
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+  }
+}
