@@ -41,11 +41,11 @@ All elements have been initially defined with default properties and html with f
 As of now i have only homepage so i am not able to design its layout for whole site. I tried to make as general and flexible so that it can be used in future easily. I took fixed layout approach and designed with five different breakpoints all breakpoints have their respective predefined width as you can see below. For Screen Size below 799px the width will have 100% screen width but will have 15px padding from left and right.
 
 ### Breakpoints
-_iPhone:_             375px  (width: 100% with padding 15px)
-_Android Mobiles:_    639px  (width: 100% with padding 15px) (Special Case)
-_General Mobile:_     799px  (width: 720px)
-_Tablets:_ 	      1080px (width: 1000px)
-_Desktop:_            1280px ( width: 1200px) 
+_iPhone:_             375px  (width: 100% with padding 15px)  
+_Android Mobiles:_    639px  (width: 100% with padding 15px) (Special Case)  
+_General Mobile:_     799px  (width: 720px)  
+_Tablets:_ 	      1080px (width: 1000px)  
+_Desktop:_            1280px ( width: 1200px)   
 
 ## Modules / Reusable Components
 
@@ -74,3 +74,44 @@ This section has a background image which is configurable so i decided to make t
 
 ### Get Involved and Our Mission Section
 As i already explained their module approach that was only for one block but to arrange all blocks i have used flex properties to make them straight and in center.
+
+### Our Members and Blogs Section
+This section have slider which has been developed by slick library.
+
+## Partials Directory
+This directory have exclusive scss files that can only be used by scss files. They do not get converted into css. This directory has three files namely mixin, variables and importer. Mixin and Variables are very useful in architecture setup. I have created variables files with all variables that can be use in scss files. You can check in partials directory.
+
+## Compass
+This is very important while developing theme as it has many predefined mixins that can be directly included in your project.
+
+# Backend Approach
+From the backend side i tried to use different modules to make the site fast. Following is the list of modules that have been installed for this site.
+
+1. Adminimal Theme (adminimal_theme)
+2. Adminimal Toolbar (adminimal_admin_menu)
+3. Ctools (ctools)
+4. Views (views)
+5. Date (date)
+6. Link (link)
+7. Field Collection (field_collection)
+8. Social Media Links (social_media_links)
+9. Bean (bean)
+10. Context (context)
+11. Ckeditor (ckeditor)
+12. Datepicker (datepicker)
+13. Empty Front Page (empty_front_page)
+14. Devel (devel)
+15. Jquery Update (jquery_update)
+16. Nodequeue (nodequeue)
+
+With the help of these modules i have created some content type which you can check with admin credentials. To check field structure of content type [Click Here](https://docs.google.com/document/d/1njK1U-XuTvhAbg48y-hrnfWsly4nRAGtrtTzr-6JlVw/edit#heading=h.80at22qjwm3c)
+
+## Views
+I have created blocks with the help of views for each section as it is very useful module and very important.
+
+## Nodequeue
+This module is generally useful when you have some of your choice nde to be shown. In blog section we can have two approaches
+Show all blogs or certain number of blogs as soon as it gets published.
+Only predefined of our choice blogs can be show with the help of nodequeue.
+
+I have decided to go with 2nd option.
