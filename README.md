@@ -115,3 +115,6 @@ Show all blogs or certain number of blogs as soon as it gets published.
 Only predefined of our choice blogs can be show with the help of nodequeue.
 
 I have decided to go with 2nd option.
+
+So this is the approach that i have taken and tried to explain to you. If you need any sort of explanation on any point any time just let me know i’ll try my best to make you understandable.
+
