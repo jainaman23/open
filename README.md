@@ -70,7 +70,7 @@ This section has also modular structure so can be written in mixin and seperate 
 It is worth mention here that i have taken a approach in which i have decided to attach each file with their respective block by this method If similar block is to be shown then all will have same file and in future if block gets removed it css will not render with page so this is basic and most important step to make your site protect with unnecessary files.
 
 ### Header 
-This section has a background image which is configurable so i decided to make that happen i have to use js approach to apply user defined image. Thanks to Drupal Setting object by which i have applied background image.
+This section has a background image which is configurable so i decided to make that happen i have to use js approach to apply user defined image. Thanks to Drupal Setting object by which i have applied background image. In template.php with the help of block preprocess i have embedded image link to setting object and hide image from block by this way image will not render as img tag and only be render by css after page load.
 
 ### Get Involved and Our Mission Section
 As i already explained their module approach that was only for one block but to arrange all blocks i have used flex properties to make them straight and in center.
