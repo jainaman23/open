@@ -1,3 +1,4 @@
+# Opencharity
 This project had lots of features and have been successfully developed. I have implemented my approach for both _front-end_ and _back-end_. I tried to show different approach for same problem wherever possible. This theme is using two fonts one is **“Open Sans”** and Other is **“Meuse”** Both of them are **not free available** so decided to use _“opensans”_ indeed, which is different from “Open Sans”. I know it will have some impact to overall design but i tried to make its look and feel same as design. I hope you will like it.
 
 #Front-End Approach
@@ -104,7 +105,7 @@ From the backend side i tried to use different modules to make the site fast. Fo
 15. Jquery Update (jquery_update)
 16. Nodequeue (nodequeue)
 
-With the help of these modules i have created some content type which you can check with admin credentials. To check field structure of content type [Click Here](https://docs.google.com/document/d/1njK1U-XuTvhAbg48y-hrnfWsly4nRAGtrtTzr-6JlVw/edit#heading=h.80at22qjwm3c)
+With the help of these modules i have created some content type which you can check with admin credentials. To check field structure of content type [Click Here](https://docs.google.com/document/d/1njK1U-XuTvhAbg48y-hrnfWsly4nRAGtrtTzr-6JlVw/edit)
 
 ## Views
 I have created blocks with the help of views for each section as it is very useful module and very important.
